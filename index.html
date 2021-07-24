@@ -9,6 +9,60 @@
     <title>Anime Landing Page</title>
 </head>
 <body>
-    
+    <section class="showcase">
+
+        <header>
+            <h2 class="logo">Beginner Anime Reccommendations</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="images/mainPageVIdeo.mp4" autoplay muted loop></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Anime is</h2>
+            <h3>an escape from reality</h3>
+            <p>Anime is a form of animation that resides in Japan and many people all over the world love
+                and enjoy its art style and story. It is a form of entertainment that cannot be recreated
+                by anyone. 
+                <br> 
+                If you were to click the button in the top right, you will see several 
+                beginner recommendations for anime.
+            </p>
+        </div>
+
+        <ul class="social">
+            <!-- anilist -->
+            <li><a href="https://anilist.co/user/Summit/" target="_blank"><img src="images/anilist.svg"></a></li>
+            <!-- discord -->
+            <li><a href="https://discordapp.com/users/465709255974977546/" target="_blank"><img src="images/Discord-Logo-White.svg"></a></li>
+
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="https://anilist.co/anime/5114/Fullmetal-Alchemist-Brotherhood/">Fullmetal Alchemist</a></li>
+            <li><a href="https://anilist.co/anime/1535/Death-Note">Death Note</a></li>
+            <li><a href="https://anilist.co/anime/21234/ERASED">Erased</a></li>
+            <li><a href="https://anilist.co/anime/101759/The-Promised-Neverland">The Promised Neverland</a></li>
+            <li><a href="https://anilist.co/anime/101922/Demon-Slayer-Kimetsu-no-Yaiba">Demon Slayer</a></li>
+            <li><a href="https://anilist.co/anime/21459/My-Hero-Academia">My Hero Academia</a></li>
+            <li><a href="https://anilist.co/anime/11061/Hunter-x-Hunter-2011/">Hunter X Hunter</a></li>
+            <!-- <li><a href="#"></a></li> -->
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector(".toggle")
+        const showcase = document.querySelector(".showcase")
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active")
+            showcase.classList.toggle("active")
+        })
+    </script>
+
 </body>
 </html>
