@@ -142,13 +142,27 @@
     display: inline-block;
     /* filter: invert(1); */
     margin-right: 20px;
-    transform: scale(0.4);
+    /* transform: scale(0.4); */
     transition: 0.5s;
 }
 
-.social li a:hover {
+.social li .anilistLogo {
+    transform: scale(0.2);
+}
+.social li .anilistLogo:hover {
+    transform: scale(0.3) translateY(-15px);
+}
+
+.social li .discordLogo {
+    transform: scale(0.4);
+}
+.social li .discordLogo:hover {
     transform: scale(0.5) translateY(-15px);
 }
+
+/* .social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+} */
 
 .menu {
     position: absolute;
