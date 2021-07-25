@@ -140,10 +140,10 @@
 
 .social li a {
     display: inline-block;
-    /* filter: invert(1); */
     margin-right: 20px;
-    /* transform: scale(0.4); */
     transition: 0.5s;
+    /* filter: invert(1); */
+    /* transform: scale(0.4); */
 }
 
 .social li .anilistLogo {
@@ -182,6 +182,10 @@
     list-style: none;
 }
 
+.menu ul li {
+    margin-top: 30px;
+}
+
 .menu ul li a {
     text-decoration: none;
     font-size: 24px;
@@ -215,32 +219,54 @@
         padding: 40px;
         font-size: 0.9em;
     }
-
     .text h2 {
         font-size: 2.7em;
     }
-
     .text h3 {
         font-size: 1.7em;
     }
-
     .showcase.active{
         right: 280px;
     } 
-    
     .menu {
         width: 280px;
     }
-
     .menu ul li {
         margin: 20px 0 0 4px;
     }
-
     .menu ul li a {
         font-size: 1em;
     }
-
     .social li a {
         margin-right: 0px;
+    }
+}
+
+@media(max-width: 320px) {
+    .showcase,
+    .showcase header {
+        padding: 20px;
+        font-size: 0.8em;
+    }
+    .text h2 {
+        font-size: 2.7em;
+    }
+    .text h3 {
+        font-size: 2em;
+    }
+    .showcase.active{
+        right: 230px;
+    } 
+    .menu {
+        width: 230px;
+    }
+    .menu ul li {
+        margin: 20px 0 0 4px;
+    }
+    .menu ul li a {
+        font-size: 0.8em;
+    }
+    .text .p2 {
+        margin-bottom: 20px;
     }
 }
