@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+}
+
 .showcase {
     position: absolute;
     right: 0;
@@ -47,7 +51,7 @@
     position: relative;
     width: 60px;
     height: 60px;
-    background: url(images/menu.png);
+    background: url(assets/menu.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -55,7 +59,7 @@
 }
 
 .toggle.active {
-    background: url(images/close.png);
+    background: url(assets/close.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -270,3 +274,67 @@
         margin-bottom: 20px;
     }
 }
+
+/* Cursor CSS */
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 1000000;
+}
+
+/* .cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+} */
+/* 
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+} */
