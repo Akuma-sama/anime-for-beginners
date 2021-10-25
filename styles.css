@@ -199,6 +199,19 @@ body {
 .menu ul li a:hover {
     color: #03a9f4;
 }
+/* Cursor CSS */
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 1000000;
+}
 
 
 @media(max-width: 798px) {
@@ -216,6 +229,9 @@ body {
     .menu ul li {
         margin: 20px 0 0 0 ;
     }
+    .cursor {
+        cursor: none;
+    }
 }
 
 @media(max-width: 500px) {
@@ -223,6 +239,9 @@ body {
     .showcase header {
         padding: 40px;
         font-size: 0.9em;
+    }
+    .cursor {
+        cursor: none;
     }
     .text h2 {
         font-size: 2.7em;
@@ -276,17 +295,4 @@ body {
     }
 }
 
-/* Cursor CSS */
-
-.cursor {
-    width: 20px;
-    height: 20px;
-    border: 1px solid red;
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    pointer-events: none;
-    z-index: 1000000;
-}
 
