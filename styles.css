@@ -245,6 +245,10 @@ body {
     .social li a {
         margin-right: 0px;
     }
+    .cursor {
+        width: 0;
+        height: 0;
+    }
 }
 
 @media(max-width: 320px) {
@@ -273,6 +277,10 @@ body {
     }
     .text .p2 {
         margin-bottom: 20px;
+    }
+    .cursor {
+        width: 0;
+        height: 0;
     }
 }
 
