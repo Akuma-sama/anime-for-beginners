@@ -152,17 +152,17 @@ body {
 }
 
 .social li .anilistLogo {
-    transform: scale(0.2);
+    transform: scale(0.3);
 }
 .social li .anilistLogo:hover {
-    transform: scale(0.3) translateY(-15px);
+    transform: scale(0.4) translateY(-15px);
 }
 
 .social li .discordLogo {
-    transform: scale(0.4);
+    transform: scale(0.6);
 }
 .social li .discordLogo:hover {
-    transform: scale(0.5) translateY(-15px);
+    transform: scale(0.7) translateY(-15px);
 }
 
 /* .social li a:hover {
